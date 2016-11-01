@@ -12,4 +12,5 @@ RUN     cd /landsat && pip install -r requirements-dev.txt
 RUN     sed -i 's/numpy.*//g' /landsat/requirements.txt
 RUN     sed -i 's/scipy.*//g' /landsat/requirements.txt
 RUN     sed -i 's/scikit-image.*//g' /landsat/requirements.txt
+
 RUN     cd /landsat && pip install -e .
